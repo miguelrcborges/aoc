@@ -1,0 +1,7 @@
+input.split('\n')
+	.map(x => x.slice(x.indexOf(':') + 1))
+	.map(x => x.split(';'))
+	.map(x => x.map(y => y.split(',').map(z => z.split(' ').splice(1))))
+	.map(x => x.map(y => y.reduce((a, c) => { a[c[1]] = parseInt(c[0]); return a }, {})))
+	.map(x => x.reduce((a, c) => {Object.keys(c).forEach(k => c[k] > a[k] ? (a[k] = c[k]) : undefined); return a;}, {green: 0, red: 0, blue: 0}))
+	.reduce((a, c) => a + c.red * c.green * c.blue, 0)

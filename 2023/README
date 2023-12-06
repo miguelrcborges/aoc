@@ -1,0 +1,16 @@
+In his year, I was reading SICP, which made me want to play with lambdas.
+
+Considered learning a new language (especially a LISP one), but
+- Most modern lisps don't do tail call optimization.
+- Relatively short time available for such investment.
+
+Being that the case, I decided doing in JavaScript, while using mostly
+the concepts present in the book.
+
+
+NOTE: It was solved using the console on the browser, which doesn't have file IO,
+so I would just declare a const variable input with the content.
+
+```
+const input = `<file contents>`
+```
