@@ -11,6 +11,15 @@ the concepts present in the book.
 NOTE: It was solved using the console on the browser, which doesn't have file IO,
 so I would just declare a const variable input with the content.
 
+
+======
+UPDATE
+======
+
+May start using fennel, since my day 10 solution would stack overflow
+the browser's runtime. To run the solution, I had to use deno and increase
+it's stack size.
+
 ```
 const input = `<file contents>`
 ```
