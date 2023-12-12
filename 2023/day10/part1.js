@@ -30,7 +30,7 @@ const start = () => {
 
 const fork = (y, x, cs) => {
 	if (steps[y][x] != -1 && steps[y][x] < cs) {
-		return cs;
+		return;
 	}
 	steps[y][x] = cs;
 
